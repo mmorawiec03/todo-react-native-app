@@ -15,10 +15,10 @@ export default function AddToDo({ submitHandler }) {
     return (
         <View>
             <View style={styles.form}>
-                <TextInput placeholder='add todo' onChangeText={changeTodoHandler} required />
+                <TextInput placeholder='Your todo' onChangeText={changeTodoHandler} required />
             </View>
             <View style={styles.form}>
-                <TextInput placeholder='date' onChangeText={changeDateHandler} />
+                <TextInput placeholder='Date (optional)' onChangeText={changeDateHandler} />
             </View>
             <View style={styles.btn}>
                 <Button title='Add ToDo' color='grey' onPress={() => submitHandler({content: todo, date})} />
